@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.login-background {
+  background: linear-gradient(to bottom right, #f8e1f4, #e0f7fa);
+  background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-background::before,
+.login-background::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.login-background::before {
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 182, 193, 0.3);
+  top: -150px;
+  left: -150px;
+}
+
+.login-background::after {
+  width: 500px;
+  height: 500px;
+  background: rgba(173, 216, 230, 0.3);
+  bottom: -100px;
+  right: -100px;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f1f1f1 url('https://www.transparenttextures.com/patterns/rain.png');
+  min-height: 100vh;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: #009688;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #00796b;
+}
+
+.btn-danger {
+  background-color: #e53935;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c62828;
+}
+
+.btn-secondary {
+  background-color: #3949ab;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #303f9f;
+}
+
+.btn-success {
+  background-color: #43a047;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #388e3c;
+}
+
+.btn-cart {
+  background-color: #1e88e5;
+  color: white;
+  margin-top: auto;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.btn-cart:hover {
+  background-color: #1565c0;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1000px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.item-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.item-price {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.item-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
